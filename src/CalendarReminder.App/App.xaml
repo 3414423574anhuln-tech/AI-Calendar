@@ -1,0 +1,8 @@
+<Application x:Class="CalendarReminder.App.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Application.Resources>
+    <Color x:Key="PrimaryColor">#5B6EF5</Color><SolidColorBrush x:Key="Primary" Color="{StaticResource PrimaryColor}"/><SolidColorBrush x:Key="Surface" Color="#FFFFFF"/><SolidColorBrush x:Key="Background" Color="#F5F7FB"/><SolidColorBrush x:Key="Muted" Color="#687086"/>
+    <Style TargetType="Button"><Setter Property="Padding" Value="18,10"/><Setter Property="BorderThickness" Value="0"/><Setter Property="Cursor" Value="Hand"/><Setter Property="FontSize" Value="14"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border Background="{TemplateBinding Background}" CornerRadius="8" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border></ControlTemplate></Setter.Value></Setter></Style>
+    <Style TargetType="TextBox"><Setter Property="Padding" Value="10"/><Setter Property="BorderBrush" Value="#D9DEEB"/><Setter Property="BorderThickness" Value="1"/><Setter Property="FontSize" Value="14"/></Style>
+    <Style TargetType="ComboBox"><Setter Property="Padding" Value="8"/><Setter Property="FontSize" Value="14"/></Style>
+  </Application.Resources>
+</Application>

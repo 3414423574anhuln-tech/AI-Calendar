@@ -1,0 +1,39 @@
+# .NET build outputs
+**/bin/
+**/obj/
+artifacts/
+
+# Local SDK, test artifacts, and release staging
+work/
+dist/
+outputs/
+# Local verification report contains machine paths and private workbook references
+BUILD_REPORT.md
+
+# User data and logs
+*.db
+*.db-shm
+*.db-wal
+logs/
+
+# User-specific IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Package and operating-system noise
+*.nupkg
+*.snupkg
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.*.local.json

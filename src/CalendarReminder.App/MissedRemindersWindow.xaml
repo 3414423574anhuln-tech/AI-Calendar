@@ -1,0 +1,8 @@
+<Window x:Class="CalendarReminder.App.MissedRemindersWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="关机期间日程提醒" Icon="Assets/AppIcon.ico" Width="680" Height="560" MinWidth="560" MinHeight="420" WindowStartupLocation="CenterScreen" Topmost="True" ShowInTaskbar="True" Background="#F7F8FC">
+ <Border BorderBrush="#D98B23" BorderThickness="1" CornerRadius="14" Padding="26" Margin="8"><Grid><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <StackPanel Orientation="Horizontal"><Border Background="#D98B23" CornerRadius="18" Width="36" Height="36"><TextBlock Text="!" Foreground="White" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><TextBlock Text="关机期间的日程提醒" FontSize="24" FontWeight="SemiBold" Foreground="#20263A" VerticalAlignment="Center" Margin="12,0,0,0"/></StackPanel>
+  <TextBlock x:Name="SummaryText" Grid.Row="1" Foreground="#76520B" Margin="0,16,0,14" TextWrapping="Wrap"/>
+  <Border Grid.Row="2" Background="White" CornerRadius="9" Padding="16"><ScrollViewer VerticalScrollBarVisibility="Auto"><TextBlock x:Name="ContentText" TextWrapping="Wrap" FontSize="15" LineHeight="23" Foreground="#272C3B"/></ScrollViewer></Border>
+  <Button Grid.Row="3" Content="我知道了" Background="#D98B23" Foreground="White" HorizontalAlignment="Right" Margin="0,20,0,0" IsDefault="True" Click="Close_Click"/>
+ </Grid></Border>
+</Window>
